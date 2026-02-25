@@ -1,0 +1,28 @@
+/* CSS Murni untuk pengaturan tambahan */
+
+/* Font khusus (Opsional) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Animasi Fade In sederhana saat halaman dimuat */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom Selection Color */
+::selection {
+    background-color: #2563eb;
+    color: white;
+}
